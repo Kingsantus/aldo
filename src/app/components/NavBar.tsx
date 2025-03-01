@@ -74,7 +74,7 @@ function MobileNav() {
           <NavLink href="/create-mint" active={pathname === "/create-mint"}>Mint Token</NavLink>
           <NavLink href="/message" active={pathname === "/message"}>Chat User</NavLink>
           <NavLink href="/send-token" active={pathname === "/send-token"}>Send Token</NavLink>
-          <NavLink href="/market-data" active={pathname === "/market-data"}>NFT Market</NavLink>
+          {/* <NavLink href="/market-data" active={pathname === "/market-data"}>NFT Market</NavLink> */}
         </div>
       )}
     </div>
