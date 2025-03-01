@@ -1,8 +1,37 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.crypto-bg {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  overflow: scroll;
+  position: relative;
+}
+
+.crypto-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(32, 217, 238, 0.15) 10%, transparent 70%);
+  top: -50%;
+  left: -50%;
+  animation: moveBg 20s infinite linear;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 :root {
