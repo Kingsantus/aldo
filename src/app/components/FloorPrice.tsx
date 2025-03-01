@@ -1,6 +1,11 @@
-import { useFloorPrice } from "../hooks/useFloorPrice";
+import { useFloorPrice } from "../hook/useFloorPrice";
 
-const FloorPrice = ({ collectionSymbol }) => {
+
+interface FloorPriceProps {
+    collectionSymbol: string;
+}
+
+const FloorPrice = ({ collectionSymbol }: FloorPriceProps) => {
     const floorPrice = useFloorPrice(collectionSymbol);
 
     return (

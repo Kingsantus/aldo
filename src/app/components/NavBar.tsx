@@ -17,8 +17,8 @@ export function NavBar() {
         <div className="hidden md:flex space-x-4">
           <NavLink href="/" active={pathname === "/"}>Home</NavLink>
           <NavLink href="/create-mint" active={pathname === "/create-mint"}>Mint Token</NavLink>
-          <NavLink href="/blog" active={pathname === "/blog"}>Posts</NavLink>
-          <NavLink href="/create-post" active={pathname === "/create-post"}>New Post</NavLink>
+          <NavLink href="/message" active={pathname === "/message"}>Chat User</NavLink>
+          <NavLink href="/send-token" active={pathname === "/send-token"}>Send Token</NavLink>
         </div>
         <div className="flex md:order-2 space-x-3">
           <WalletMultiButton
@@ -72,8 +72,9 @@ function MobileNav() {
         <div className="absolute right-0 mt-2 w-48 bg-transparent dark:bg-gray-800 shadow-lg rounded-md flex flex-col space-y-2 p-2 z-50">
           <NavLink href="/" active={pathname === "/"}>Home</NavLink>
           <NavLink href="/create-mint" active={pathname === "/create-mint"}>Mint Token</NavLink>
-          <NavLink href="/blog" active={pathname === "/blog"}>Posts</NavLink>
-          <NavLink href="/create-post" active={pathname === "/create-post"}>New Post</NavLink>
+          <NavLink href="/message" active={pathname === "/message"}>Chat User</NavLink>
+          <NavLink href="/send-token" active={pathname === "/send-token"}>Send Token</NavLink>
+          <NavLink href="/market-data" active={pathname === "/market-data"}>NFT Market</NavLink>
         </div>
       )}
     </div>
